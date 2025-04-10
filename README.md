@@ -19,8 +19,9 @@ This is a Java-based application that processes car data and displays results ba
 - settings.gradle: Gradle settings file.
 
 ### Run the Application
-1. `./gradlew clean build`
-2. `java -jar build/libs/car-trawler-assesment-1.0-SNAPSHOT.jar`
+1. `chmod +x gradlew`
+2. `./gradlew clean build`
+3. `java -jar build/libs/car-trawler-assesment-1.0-SNAPSHOT.jar`
 
 ### Application Flow
 1. **Start**: The application starts with the `AssessmentRunner` class (entry point).
