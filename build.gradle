@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.cartrawler'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.cartrawler.assessment.app.AssessmentRunner' // Replace with your main class
+        )
+    }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
